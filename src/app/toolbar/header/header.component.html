@@ -1,0 +1,93 @@
+<mat-toolbar>
+  <div fxHide.gt-xs>
+    <button mat-icon-button >
+    <!-- (click)="onToggleSidenav()" -->
+
+      <mat-icon style="color: white;">menu</mat-icon>
+    </button>
+  </div>
+
+  <div fxFlex fxLayout fxLayoutAlign="" fxHide.xs>
+    <ul fxLayout class="navigationbar" fxLayoutGap="40px">
+      <li >
+        <!-- *ngIf="!isAuth"> -->
+        <a
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+            font-size: x-large;
+          "
+          routerLink="/Home"
+          >Home
+        </a>
+      </li>
+      <li >
+        <!-- *ngIf="!isAuth"> -->
+        <a
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+            font-size: x-large;
+          "
+          routerLink="/TreatmentPage"
+          >Treatments</a
+        >
+      </li>
+      <li >
+        <!-- *ngIf="!isAuth"> -->
+        <a
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+            font-size: x-large;
+          "
+          routerLink="/aboutus"
+          >About Us</a
+        >
+      </li>
+      <li >
+        <!-- *ngIf="!isAuth"> -->
+        <a
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+            font-size: x-large;
+          "
+          routerLink="/contactus"
+          >Contact Us</a
+        >
+      </li>
+      <li >
+        <!-- *ngIf="isAuth"> -->
+        <a
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+            font-size: x-large;
+          "
+          routerLink="/adminlist"
+          >Admin List</a
+        >
+      </li>
+       <li >
+         <!-- *ngIf="isAuth"> -->
+        <a
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+            font-size: x-large;
+          "
+          routerLink="/patient"
+          >Patient List</a
+        >
+      </li>
+      <li >
+        <!-- *ngIf="isAuth"> -->
+        <a  style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+            font-size: x-large; cursor: pointer;"></a>
+          <!-- " (click)="logout()">Logout</a> -->
+        </li>
+    </ul>
+  </div>
+</mat-toolbar>
