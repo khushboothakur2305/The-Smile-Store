@@ -25,45 +25,44 @@
 .topcard {
   width: 320px;
   height: 300px;
-  background-image: linear-gradient(#f56cc7,#f8c6e8);
+  background-image: linear-gradient(#f56cc7, #f8c6e8);
   //#d15baa;
   border-radius: 25px;
 }
-.heading{
-  font-family:cursive;
+.heading {
+  font-family: cursive;
   font-size: 25px;
-  font-weight:bolder;
+  font-weight: bolder;
   line-height: 38px;
   color: black;
 }
-.content{
+.content {
   font-size: 20px;
   font-family: cursive;
   line-height: 35px;
-  color:black;
-
+  color: black;
 }
-.mobimage{
-  width:100%;
+.mobimage {
+  width: 100%;
   height: 300px;
 }
-.icon{
+.icon {
   width: 130px;
   height: 130px;
   border-radius: 50%;
 }
-.icon1{
+.icon1 {
   width: 160px;
   height: 160px;
   border-radius: 50%;
 }
-.mobicon{
+.mobicon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
-.mobicon1{
+.mobicon1 {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -72,56 +71,52 @@
 //rgb(129, 72, 34)
 //rgb(207, 205, 204)
 
-.container{
+.container {
   position: absolute;
   top: 2650px;
   left: 70%;
   transform: translate(-50%, -50%);
 }
 
-.mobcontainer{
+.mobcontainer {
   position: absolute;
   top: 1815px;
   left: 65%;
   transform: translate(-50%, -50%);
 }
-.head{
+.head {
   color: black;
   font-size: 70px;
   text-align: center;
   line-height: 60px;
   font-family: cursive;
 }
-.mobhead{
-
+.mobhead {
   color: black;
   font-size: 30px;
   text-align: center;
   line-height: 15px;
   font-family: cursive;
 }
-.logoimg{
+.logoimg {
   width: 100%;
   height: 300px;
 }
-.animate__animated.animate__fadeInDown{
+.animate__animated.animate__fadeInDown {
   animation-duration: 3s;
 }
-.animate__animated.animate__fadeInLeft
-{
+.animate__animated.animate__fadeInLeft {
   animation-delay: 0.5s;
   animation-duration: 3s;
 }
-.animate__animated.animate__fadeInDownBig{
+.animate__animated.animate__fadeInDownBig {
   animation-duration: 3s;
   animation-delay: 0.5s;
-
 }
-.animate__animated.animate__fadeInRight{
-animation-duration: 3s;
+.animate__animated.animate__fadeInRight {
+  animation-duration: 3s;
   animation-delay: 0.5s;
-
 }
-.animate__animated.animate__fadeIn{
-animation-duration: 5s;
+.animate__animated.animate__fadeIn {
+  animation-duration: 5s;
 }

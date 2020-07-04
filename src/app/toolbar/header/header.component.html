@@ -1,7 +1,7 @@
 <mat-toolbar>
   <div fxHide.gt-xs>
-    <button mat-icon-button >
-    <!-- (click)="onToggleSidenav()" -->
+    <button mat-icon-button>
+      <!-- (click)="onToggleSidenav()" -->
 
       <mat-icon style="color: white;">menu</mat-icon>
     </button>
@@ -9,7 +9,7 @@
 
   <div fxFlex fxLayout fxLayoutAlign="" fxHide.xs>
     <ul fxLayout class="navigationbar" fxLayoutGap="40px">
-      <li >
+      <li>
         <!-- *ngIf="!isAuth"> -->
         <a
           style="
@@ -21,7 +21,7 @@
           >Home
         </a>
       </li>
-      <li >
+      <li>
         <!-- *ngIf="!isAuth"> -->
         <a
           style="
@@ -33,7 +33,7 @@
           >Treatments</a
         >
       </li>
-      <li >
+      <li>
         <!-- *ngIf="!isAuth"> -->
         <a
           style="
@@ -45,7 +45,7 @@
           >About Us</a
         >
       </li>
-      <li >
+      <li>
         <!-- *ngIf="!isAuth"> -->
         <a
           style="
@@ -57,7 +57,7 @@
           >Contact Us</a
         >
       </li>
-      <li >
+      <li>
         <!-- *ngIf="isAuth"> -->
         <a
           style="
@@ -69,8 +69,8 @@
           >Admin List</a
         >
       </li>
-       <li >
-         <!-- *ngIf="isAuth"> -->
+      <li>
+        <!-- *ngIf="isAuth"> -->
         <a
           style="
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
@@ -81,13 +81,18 @@
           >Patient List</a
         >
       </li>
-      <li >
+      <li>
         <!-- *ngIf="isAuth"> -->
-        <a  style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+        <a
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
               serif;
-            font-size: x-large; cursor: pointer;"></a>
-          <!-- " (click)="logout()">Logout</a> -->
-        </li>
+            font-size: x-large;
+            cursor: pointer;
+          "
+        ></a>
+        <!-- " (click)="logout()">Logout</a> -->
+      </li>
     </ul>
   </div>
 </mat-toolbar>

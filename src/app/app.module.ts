@@ -10,11 +10,19 @@ import {MatCardModule} from '@angular/material/card';
 import { HeaderComponent } from "./toolbar/header/header.component";
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { SidenavComponent } from './toolbar/sidenav/sidenav.component';
+import {MatListModule} from '@angular/material/list';
+import { NgImageSliderModule } from 'ng-image-slider';
+import { GalleryComponent } from './imgslider/gallery/gallery.component';
+import { MobGalleryComponent } from './imgslider/mob-gallery/mob-gallery.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidenavComponent,
+    GalleryComponent,
+    MobGalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +31,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatListModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
