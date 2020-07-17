@@ -44,6 +44,7 @@ import { AdminloginportalComponent } from './adminloginportal/adminloginportal.c
 import { ContactusComponent } from './contactus/contactus.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { LogoImageComponent } from './logo-image/logo-image.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -80,7 +81,8 @@ import { HomeComponent } from './home/home.component';
     AdminloginportalComponent,
     ContactusComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    LogoImageComponent
   ],
   imports: [
     BrowserModule,
