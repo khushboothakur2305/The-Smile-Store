@@ -15,6 +15,12 @@ import {MatListModule} from '@angular/material/list';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { GalleryComponent } from './imgslider/gallery/gallery.component';
 import { MobGalleryComponent } from './imgslider/mob-gallery/mob-gallery.component';
+import { CosmeticDentistryComponent } from './treatment/cosmetic-dentistry/cosmetic-dentistry.component';
+import { CrownandbridgesComponent } from './treatment/crownandbridges/crownandbridges.component';
+import { DentalImplantsComponent } from './treatment/dental-implants/dental-implants.component';
+import { DentaljewelleryComponent } from './treatment/dentaljewellery/dentaljewellery.component';
+import { FullMouthRehabilitationComponent } from './treatment/full-mouth-rehabilitation/full-mouth-rehabilitation.component';
+import { ImpactedteethComponent } from './treatment/impactedteeth/impactedteeth.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +28,13 @@ import { MobGalleryComponent } from './imgslider/mob-gallery/mob-gallery.compone
     HeaderComponent,
     SidenavComponent,
     GalleryComponent,
-    MobGalleryComponent
+    MobGalleryComponent,
+    CosmeticDentistryComponent,
+    CrownandbridgesComponent,
+    DentalImplantsComponent,
+    DentaljewelleryComponent,
+    FullMouthRehabilitationComponent,
+    ImpactedteethComponent
   ],
   imports: [
     BrowserModule,
