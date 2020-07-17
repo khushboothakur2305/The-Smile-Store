@@ -1,5 +1,5 @@
 import { TreatmentrouteModule } from './../../treatmentroute/treatmentroute/treatmentroute.module';
-import { EnquriyService } from './../../../service/enquiry/enquriy.service';
+import { EnquiryService } from './../../../service/enquiry.service';
 import { DialogComponent } from './../../../Enquiry/dialog/dialog.component';
 import { TreatmentPageComponent } from './../../../treatment/treatment-page/treatment-page.component';
 import { RootcanalComponent } from './../../../treatment/rootcanal/rootcanal.component';
@@ -50,6 +50,6 @@ import { CommonModule } from '@angular/common';
     DialogComponent,
   ],
   imports: [CommonModule, SharedmoduleModule, MaterialmoduleModule,TreatmentrouteModule],
-  providers:[EnquriyService]
+  providers:[EnquiryService]
 })
 export class TreatementModule {}

@@ -1,101 +1,69 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { ContactService } from './service/contact/contact.service';
+import { MaterialmoduleModule } from './module/materialmodule/materialmodule.module';
+import { SharedmoduleModule } from './module/sharedmodule/sharedmodule/sharedmodule.module';
+import { TreatementModule } from './module/treatment/treatement/treatement.module';
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomepageComponent } from './Home/homepage/homepage.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule} from '@angular/material/card';
-import { HeaderComponent } from "./toolbar/header/header.component";
-import {MatIconModule} from '@angular/material/icon';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { ContactusComponent } from './contactus/contactus.component';
 import { SidenavComponent } from './toolbar/sidenav/sidenav.component';
-import {MatListModule} from '@angular/material/list';
+import { HeaderComponent } from './toolbar/header/header.component';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './imgslider/gallery/gallery.component';
 import { MobGalleryComponent } from './imgslider/mob-gallery/mob-gallery.component';
-import { CosmeticDentistryComponent } from './treatment/cosmetic-dentistry/cosmetic-dentistry.component';
-import { CrownandbridgesComponent } from './treatment/crownandbridges/crownandbridges.component';
-import { DentalImplantsComponent } from './treatment/dental-implants/dental-implants.component';
-import { DentaljewelleryComponent } from './treatment/dentaljewellery/dentaljewellery.component';
-import { FullMouthRehabilitationComponent } from './treatment/full-mouth-rehabilitation/full-mouth-rehabilitation.component';
-import { ImpactedteethComponent } from './treatment/impactedteeth/impactedteeth.component';
-import { InvisalignComponent } from './treatment/invisalign/invisalign.component';
-import { OrthodonticsComponent } from './treatment/orthodontics/orthodontics.component';
-import { PatienteducationComponent } from './treatment/patienteducation/patienteducation.component';
-import { PediatricdentistryComponent } from './treatment/pediatricdentistry/pediatricdentistry.component';
-import { PeriodonticsComponent } from './treatment/periodontics/periodontics.component';
-import { PorcelainLaminateVeneersComponent } from './treatment/porcelain-laminate-veneers/porcelain-laminate-veneers.component';
-import { RootcanalComponent } from './treatment/rootcanal/rootcanal.component';
-import { SmileDesigningComponent } from './treatment/smile-designing/smile-designing.component';
-import { ToothColouredFillingComponent } from './treatment/tooth-coloured-filling/tooth-coloured-filling.component';
-import { ToothWhiteningComponent } from './treatment/tooth-whitening/tooth-whitening.component';
-import { TreatmentPageComponent } from './treatment/treatment-page/treatment-page.component';
-import { DialogComponent } from './Enquiry/dialog/dialog.component';
-import { EnquirybuttonComponent } from './Enquiry/enquirybutton/enquirybutton.component';
+import { FooterComponent } from './footer/footer.component';
 import { AboutdeveloperComponent } from './aboutdeveloper/aboutdeveloper.component';
-import { AboutusComponent } from './aboutus/aboutus.component';
-import { ContactlistComponent } from './admin/contactlist/contactlist.component';
-import { CreateuserComponent } from './admin/createuser/createuser.component';
+
+import { AngularFireAuthModule } from '@angular/fire/auth';
 import { EnquirylistComponent } from './admin/enquirylist/enquirylist.component';
+import { ContactlistComponent } from './admin/contactlist/contactlist.component';
 import { FetchlistComponent } from './admin/fetchlist/fetchlist.component';
 import { AdminloginportalComponent } from './adminloginportal/adminloginportal.component';
-import { ContactusComponent } from './contactus/contactus.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
-import { LogoImageComponent } from './logo-image/logo-image.component';
+import { PatiententryComponent } from './patient/patiententry/patiententry.component';
+import { CreateuserComponent } from './admin/createuser/createuser.component';
+import { PatientDetialsComponent } from './patient/patient-detials/patient-detials.component';
+import { PatientComponent } from './patient/patient/patient.component';
+import { EditpaitentComponent } from './patient/editpaitent/editpaitent.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
-    HeaderComponent,
+    AboutusComponent,
+    ContactusComponent,
     SidenavComponent,
+    HeaderComponent,
+    HomeComponent,
     GalleryComponent,
     MobGalleryComponent,
-    CosmeticDentistryComponent,
-    CrownandbridgesComponent,
-    DentalImplantsComponent,
-    DentaljewelleryComponent,
-    FullMouthRehabilitationComponent,
-    ImpactedteethComponent,
-    InvisalignComponent,
-    OrthodonticsComponent,
-    PatienteducationComponent,
-    PediatricdentistryComponent,
-    PeriodonticsComponent,
-    PorcelainLaminateVeneersComponent,
-    RootcanalComponent,
-    SmileDesigningComponent,
-    ToothColouredFillingComponent,
-    ToothWhiteningComponent,
-    TreatmentPageComponent,
-    DialogComponent,
-    EnquirybuttonComponent,
+    FooterComponent,
     AboutdeveloperComponent,
-    AboutusComponent,
-    ContactlistComponent,
-    CreateuserComponent,
     EnquirylistComponent,
+    ContactlistComponent,
     FetchlistComponent,
     AdminloginportalComponent,
-    ContactusComponent,
-    FooterComponent,
-    HomeComponent,
-    LogoImageComponent
+    PatiententryComponent,
+    CreateuserComponent,
+    PatientDetialsComponent,
+    PatientComponent,
+    EditpaitentComponent,
+
   ],
   imports: [
-    BrowserModule,
-    MatCardModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    FlexLayoutModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatListModule,
-    NgImageSliderModule
+    SharedmoduleModule,
+    TreatementModule,
+    MaterialmoduleModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    NgImageSliderModule,
+    AngularFireAuthModule,
+    AngularFireAuthModule,
+    ScrollingModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ContactService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
