@@ -29,6 +29,14 @@ import { PeriodonticsComponent } from './treatment/periodontics/periodontics.com
 import { PorcelainLaminateVeneersComponent } from './treatment/porcelain-laminate-veneers/porcelain-laminate-veneers.component';
 import { RootcanalComponent } from './treatment/rootcanal/rootcanal.component';
 import { SmileDesigningComponent } from './treatment/smile-designing/smile-designing.component';
+import { ToothColouredFillingComponent } from './treatment/tooth-coloured-filling/tooth-coloured-filling.component';
+import { ToothWhiteningComponent } from './treatment/tooth-whitening/tooth-whitening.component';
+import { TreatmentPageComponent } from './treatment/treatment-page/treatment-page.component';
+import { DialogComponent } from './Enquiry/dialog/dialog.component';
+import { EnquirybuttonComponent } from './Enquiry/enquirybutton/enquirybutton.component';
+import { AboutdeveloperComponent } from './aboutdeveloper/aboutdeveloper.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactlistComponent } from './admin/contactlist/contactlist.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +58,15 @@ import { SmileDesigningComponent } from './treatment/smile-designing/smile-desig
     PeriodonticsComponent,
     PorcelainLaminateVeneersComponent,
     RootcanalComponent,
-    SmileDesigningComponent
+    SmileDesigningComponent,
+    ToothColouredFillingComponent,
+    ToothWhiteningComponent,
+    TreatmentPageComponent,
+    DialogComponent,
+    EnquirybuttonComponent,
+    AboutdeveloperComponent,
+    AboutusComponent,
+    ContactlistComponent
   ],
   imports: [
     BrowserModule,
