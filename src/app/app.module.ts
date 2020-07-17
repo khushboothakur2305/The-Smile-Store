@@ -37,6 +37,13 @@ import { EnquirybuttonComponent } from './Enquiry/enquirybutton/enquirybutton.co
 import { AboutdeveloperComponent } from './aboutdeveloper/aboutdeveloper.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactlistComponent } from './admin/contactlist/contactlist.component';
+import { CreateuserComponent } from './admin/createuser/createuser.component';
+import { EnquirylistComponent } from './admin/enquirylist/enquirylist.component';
+import { FetchlistComponent } from './admin/fetchlist/fetchlist.component';
+import { AdminloginportalComponent } from './adminloginportal/adminloginportal.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +73,14 @@ import { ContactlistComponent } from './admin/contactlist/contactlist.component'
     EnquirybuttonComponent,
     AboutdeveloperComponent,
     AboutusComponent,
-    ContactlistComponent
+    ContactlistComponent,
+    CreateuserComponent,
+    EnquirylistComponent,
+    FetchlistComponent,
+    AdminloginportalComponent,
+    ContactusComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
