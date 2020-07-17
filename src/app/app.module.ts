@@ -21,6 +21,14 @@ import { DentalImplantsComponent } from './treatment/dental-implants/dental-impl
 import { DentaljewelleryComponent } from './treatment/dentaljewellery/dentaljewellery.component';
 import { FullMouthRehabilitationComponent } from './treatment/full-mouth-rehabilitation/full-mouth-rehabilitation.component';
 import { ImpactedteethComponent } from './treatment/impactedteeth/impactedteeth.component';
+import { InvisalignComponent } from './treatment/invisalign/invisalign.component';
+import { OrthodonticsComponent } from './treatment/orthodontics/orthodontics.component';
+import { PatienteducationComponent } from './treatment/patienteducation/patienteducation.component';
+import { PediatricdentistryComponent } from './treatment/pediatricdentistry/pediatricdentistry.component';
+import { PeriodonticsComponent } from './treatment/periodontics/periodontics.component';
+import { PorcelainLaminateVeneersComponent } from './treatment/porcelain-laminate-veneers/porcelain-laminate-veneers.component';
+import { RootcanalComponent } from './treatment/rootcanal/rootcanal.component';
+import { SmileDesigningComponent } from './treatment/smile-designing/smile-designing.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +42,15 @@ import { ImpactedteethComponent } from './treatment/impactedteeth/impactedteeth.
     DentalImplantsComponent,
     DentaljewelleryComponent,
     FullMouthRehabilitationComponent,
-    ImpactedteethComponent
+    ImpactedteethComponent,
+    InvisalignComponent,
+    OrthodonticsComponent,
+    PatienteducationComponent,
+    PediatricdentistryComponent,
+    PeriodonticsComponent,
+    PorcelainLaminateVeneersComponent,
+    RootcanalComponent,
+    SmileDesigningComponent
   ],
   imports: [
     BrowserModule,
