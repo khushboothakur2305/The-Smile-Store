@@ -1,4 +1,4 @@
-import { ContactService } from './service/contact.service';
+import { ContactService } from './service/contact/contact.service';
 import { MaterialmoduleModule } from './module/materialmodule/materialmodule.module';
 import { SharedmoduleModule } from './module/sharedmodule/sharedmodule/sharedmodule.module';
 import { TreatementModule } from './module/treatment/treatment/treatment.module';

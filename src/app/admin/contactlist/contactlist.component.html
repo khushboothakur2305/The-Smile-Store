@@ -1,1 +1,41 @@
-<p>contactlist works!</p>
+<div
+  style="font-family: cursive; font-size: 40px; padding: 40px;"
+  fxLayoutAlign="center"
+>
+  Contact List
+</div>
+<div fxLayout="column" fxLayoutAlign="center center" style="padding: 30px;">
+  <mat-table [dataSource]="datasource" matSort>
+    <ng-container matColumnDef="Date">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Date</mat-header-cell>
+      <mat-cell *matCellDef="let element">{{
+        element.Date.seconds * 1000 | date
+      }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>name</mat-header-cell>
+      <mat-cell *matCellDef="let element">{{ element.name }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>email</mat-header-cell>
+      <mat-cell *matCellDef="let element"
+        ><a href="mailto:{{ element.email }}">{{ element.email }}</a></mat-cell
+      >
+    </ng-container>
+    <ng-container matColumnDef="phone">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>phone</mat-header-cell>
+      <mat-cell *matCellDef="let element"
+        ><a href="tel:{{ element.phone }}">{{ element.phone }}</a></mat-cell
+      >
+    </ng-container>
+    <ng-container matColumnDef="treatment">
+      <mat-header-cell *matHeaderCellDef mat-sort-header
+        >treatment</mat-header-cell
+      >
+      <mat-cell *matCellDef="let element">{{ element.treatment }}</mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let rows; columns: displayedColumns"></mat-row>
+  </mat-table>
+  <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]"></mat-paginator>
+</div>

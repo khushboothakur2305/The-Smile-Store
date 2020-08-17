@@ -1,5 +1,5 @@
 import { TreatmentrouteModule } from './../../treatmentroute/treatmentroute/treatmentroute.module';
-import { EnquiryService } from './../../../service/enquiry.service';
+import { EnquiryService } from '../../../service/enquiry/enquiry.service';
 import { DialogComponent } from './../../../Enquiry/dialog/dialog.component';
 import { TreatmentPageComponent } from './../../../treatment/treatment-page/treatment-page.component';
 import { RootcanalComponent } from './../../../treatment/rootcanal/rootcanal.component';
