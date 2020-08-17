@@ -57,7 +57,6 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     TreatementModule,
     MaterialmoduleModule,
     AngularFirestoreModule,
-    AngularFireModule.initializeApp(environment.firebase),
     NgImageSliderModule,
     AngularFireAuthModule,
     AngularFireAuthModule,
