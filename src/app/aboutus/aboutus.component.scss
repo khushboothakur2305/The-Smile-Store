@@ -1,38 +1,35 @@
-.heading{
+.heading {
   font-family: cursive;
   font-size: 100px;
-  color:black;
+  color: black;
   padding: 20px;
 }
-.cardheading{
+.cardheading {
   font-family: cursive;
   font-size: 70px;
-  color:black;
+  color: black;
   padding: 20px;
 }
-.mobcardheading{
+.mobcardheading {
   font-family: cursive;
   font-size: 35px;
-  color:black;
+  color: black;
   padding-left: 10%;
-
 }
-.content{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.content {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 22px;
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 50px;
   line-height: 120%;
-
 }
-mat-card{
+mat-card {
   width: 330px;
   height: 500x;
-  }
-.logoimg{
+}
+.logoimg {
   width: 100%;
-
 }
 .icon {
   height: 90px;
@@ -44,7 +41,7 @@ mat-card{
   width: 70%;
 }
 
-p{
+p {
   word-spacing: normal;
 }
 .imgs {
@@ -72,9 +69,7 @@ p{
     opacity: 1;
     transform: translateX(0);
   }
-
 }
-.animate__animated.animate__fadeInDown
-{
+.animate__animated.animate__fadeInDown {
   animation-duration: 4s;
 }
