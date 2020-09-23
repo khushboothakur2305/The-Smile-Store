@@ -8,9 +8,8 @@ describe('AdminloginportalComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdminloginportalComponent ]
-    })
-    .compileComponents();
+      declarations: [AdminloginportalComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
